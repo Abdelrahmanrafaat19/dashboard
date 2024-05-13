@@ -28,7 +28,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "emailhint":
             MessageLookupByLibrary.simpleMessage("أدخل البريد الالكتروني"),
         "forgetpassword":
-            MessageLookupByLibrary.simpleMessage("نسية كلمة المرور"),
+            MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
+        "forgetpasswordfailurestate": MessageLookupByLibrary.simpleMessage(
+            "هذا البريد الالكتروني غير موجود"),
+        "forgetpasswordsuccessstate":
+            MessageLookupByLibrary.simpleMessage("إفحص بريدك الالكتروني"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginfailurestate": MessageLookupByLibrary.simpleMessage(
             "البريد الإلكتروي او كلمة المرور غير صحيح"),
@@ -40,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("رجاء ادخل كلمة المرور"),
         "passwordhint":
             MessageLookupByLibrary.simpleMessage("ادخل كلمة المرور"),
+        "send": MessageLookupByLibrary.simpleMessage("إرسال"),
         "signUpQ": MessageLookupByLibrary.simpleMessage("هل لديك حساب؟"),
         "signup": MessageLookupByLibrary.simpleMessage("إشترك"),
         "signupfailurestate":

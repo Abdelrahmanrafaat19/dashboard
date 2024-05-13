@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:dashboard/feature/login/data/login_repo/login_repo_imple.dart';
+import 'package:dashboard/feature/auth/data/login_repo/login_repo_imple.dart';
 // ignore: depend_on_referenced_packages
 import 'package:meta/meta.dart';
 part 'login_state.dart';

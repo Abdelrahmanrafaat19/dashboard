@@ -1,28 +1,27 @@
 import 'package:dashboard/core/componant/custam_text.dart';
 import 'package:dashboard/core/scal_factor_method.dart';
 import 'package:dashboard/core/theme/color.dart';
-import 'package:dashboard/feature/login/presentation/bloc/login_bloc/login_cubit.dart';
-import 'package:dashboard/feature/login/presentation/views/widget/login_button.dart';
-import 'package:dashboard/feature/login/presentation/views/widget/login_q.dart';
-import 'package:dashboard/feature/login/presentation/views/widget/password_field.dart';
-import 'package:dashboard/feature/login/presentation/views/widget/username_field.dart';
+import 'package:dashboard/feature/auth/presentation/bloc/forget_password_cubit/forget_password_cubit.dart';
+import 'package:dashboard/feature/auth/presentation/views/widget/email_field.dart';
+import 'package:dashboard/feature/auth/presentation/views/widget/send_email_button.dart';
 import 'package:dashboard/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class LoginBody extends StatelessWidget {
-  LoginBody({super.key});
-  final TextEditingController userNameController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+class ForgetPasswordBody extends StatelessWidget {
+  ForgetPasswordBody({super.key});
   final _formKey = GlobalKey<FormState>();
+  final TextEditingController emailController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
-    return BlocConsumer<LoginCubit, LoginState>(
+    return BlocConsumer<ForgetPasswordCubit, ForgetPasswordState>(
       listener: (context, state) {
-        if (state is LoginIsLoading) {
+        if (state is ForgetPasswordIsLoading) {
           showDialog(
             context: context,
             builder: (context) => AlertDialog(
@@ -35,12 +34,21 @@ class LoginBody extends StatelessWidget {
                   ))),
             ),
           );
-        } else if (state is LoginISuccess) {
+        } else if (state is ForgetPasswordSuccess) {
           Navigator.of(context).pop();
           showDialog(
             context: context,
             builder: (context) => AlertDialog(
-              content: Text(S.of(context).signupsuccessatate),
+              content: Text(S.of(context).forgetpasswordsuccessstate),
+            ),
+          );
+        } else if (state is ForgetPasswordFailure) {
+          Navigator.of(context).pop();
+
+          showDialog(
+            context: context,
+            builder: (context) => AlertDialog(
+              content: Text(state.message.toString()),
             ),
           );
         } else {
@@ -49,7 +57,9 @@ class LoginBody extends StatelessWidget {
           showDialog(
             context: context,
             builder: (context) => AlertDialog(
-              content: Text(S.of(context).loginfailurestate),
+              content: Text(
+                S.of(context).forgetpasswordfailurestate,
+              ),
             ),
           );
         }
@@ -86,7 +96,7 @@ class LoginBody extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         customText(
-                          text: S.of(context).login,
+                          text: S.of(context).forgetpassword,
                           color: SharedColor.blueColor,
                           fontSize: getResponsiveFont(context, fontSize: 30),
                           fontWeight: FontWeight.bold,
@@ -94,42 +104,22 @@ class LoginBody extends StatelessWidget {
                         SizedBox(
                           height: 15.h,
                         ),
-                        customText(
-                          text: S.of(context).loginhint,
-                          color: SharedColor.greyFieldColor,
-                          fontSize: getResponsiveFont(context, fontSize: 15),
-                        ),
-                        SizedBox(
-                          height: 15.h,
-                        ),
-                        UserNameField(
-                          controller: userNameController,
-                        ),
-                        SizedBox(
-                          height: 20.h,
-                        ),
-                        PasswordField(
-                          controller: passwordController,
+                        EmailField(
+                          controller: emailController,
                         ),
                         SizedBox(
                           height: 30.h,
                         ),
-                        LoginButton(
+                        SendEmailButton(
                           onTap: () {
                             if (_formKey.currentState!.validate()) {
-                              BlocProvider.of<LoginCubit>(context).loginMethod(
-                                {
-                                  "identifier": userNameController.text,
-                                  "password": passwordController.text
-                                },
+                              BlocProvider.of<ForgetPasswordCubit>(context)
+                                  .fordetPasswordMethod(
+                                {"email": emailController.text},
                               );
                             }
                           },
                         ),
-                        SizedBox(
-                          height: 30.h,
-                        ),
-                        const SignUpQLoginScreen(),
                       ],
                     ),
                   ),

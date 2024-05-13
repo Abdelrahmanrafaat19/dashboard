@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:dashboard/core/api_servec.dart';
 import 'package:dashboard/core/error/failure.dart';
-import 'package:dashboard/feature/login/data/signup/sign_up_repo.dart';
+import 'package:dashboard/feature/auth/data/signup/sign_up_repo.dart';
 import 'package:dio/dio.dart';
 
 class SignUpRepoImple implements SignUpRepo {

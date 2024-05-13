@@ -2,7 +2,7 @@ import 'package:dashboard/core/componant/custam_buttons.dart';
 import 'package:dashboard/core/componant/custam_text.dart';
 import 'package:dashboard/core/scal_factor_method.dart';
 import 'package:dashboard/core/theme/color.dart';
-import 'package:dashboard/feature/login/presentation/views/login.dart';
+import 'package:dashboard/feature/auth/presentation/views/login.dart';
 import 'package:dashboard/generated/l10n.dart';
 import 'package:flutter/material.dart';
 

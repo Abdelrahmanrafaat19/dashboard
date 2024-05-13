@@ -16,5 +16,8 @@
     "signUpQ": "Are you have acount?",
     "signupsuccessatate": "The Registration is Completed",
     "signupfailurestate": "This Data Already Existing",
-    "loginfailurestate": "The E-mail or Password is Error"
+    "loginfailurestate": "The E-mail or Password is Error",
+    "send": "Send",
+    "forgetpasswordfailurestate": "This E-mail isn`t Exisit",
+    "forgetpasswordsuccessstate": "Check Your E-mail"
 }

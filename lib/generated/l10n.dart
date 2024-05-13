@@ -229,6 +229,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Send`
+  String get send {
+    return Intl.message(
+      'Send',
+      name: 'send',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This E-mail isn't Exisit`
+  String get forgetpasswordfailurestate {
+    return Intl.message(
+      'This E-mail isn`t Exisit',
+      name: 'forgetpasswordfailurestate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Check Your E-mail`
+  String get forgetpasswordsuccessstate {
+    return Intl.message(
+      'Check Your E-mail',
+      name: 'forgetpasswordsuccessstate',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

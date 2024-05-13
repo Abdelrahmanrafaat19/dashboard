@@ -28,6 +28,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "emailhint": MessageLookupByLibrary.simpleMessage("Enter Your E-mail"),
         "forgetpassword":
             MessageLookupByLibrary.simpleMessage("Forget Password"),
+        "forgetpasswordfailurestate":
+            MessageLookupByLibrary.simpleMessage("This E-mail isn`t Exisit"),
+        "forgetpasswordsuccessstate":
+            MessageLookupByLibrary.simpleMessage("Check Your E-mail"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginfailurestate": MessageLookupByLibrary.simpleMessage(
             "The E-mail or Password is Error"),
@@ -40,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Please Enter Your Password"),
         "passwordhint":
             MessageLookupByLibrary.simpleMessage("Enter Your Password"),
+        "send": MessageLookupByLibrary.simpleMessage("Send"),
         "signUpQ": MessageLookupByLibrary.simpleMessage("Are you have acount?"),
         "signup": MessageLookupByLibrary.simpleMessage("SignUp"),
         "signupfailurestate":

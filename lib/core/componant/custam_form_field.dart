@@ -2,7 +2,6 @@ import 'package:dashboard/constant.dart';
 
 import 'package:dashboard/core/theme/color.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Container defaultTextFormField({
   @required Widget? label,
@@ -45,9 +44,9 @@ Container defaultTextFormField({
         focusedBorder: border,
         border: border,
         errorBorder: border!.copyWith(
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             color: SharedColor.mainColor,
-            width: 2.w,
+            width: 2,
           ),
         ),
       ),

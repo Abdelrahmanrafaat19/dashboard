@@ -1,5 +1,5 @@
-import 'package:dashboard/feature/login/data/signup/sign_up_repo_imple.dart';
-import 'package:dashboard/feature/login/presentation/bloc/sign_up_bloc/sign_up_states.dart';
+import 'package:dashboard/feature/auth/data/signup/sign_up_repo_imple.dart';
+import 'package:dashboard/feature/auth/presentation/bloc/sign_up_bloc/sign_up_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignUpCubit extends Cubit<SignUpState> {

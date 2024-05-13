@@ -16,5 +16,9 @@
     "signUpQ": "هل لديك حساب؟",
     "signupsuccessatate": "التسجيل قد اكتمل",
     "signupfailurestate": "هذة البيانات موجودة من قبل",
-    "loginfailurestate": "البريد الإلكتروي او كلمة المرور غير صحيح"
+    "loginfailurestate": "البريد الإلكتروي او كلمة المرور غير صحيح",
+    "forgetpassword": "نسيت كلمة المرور",
+    "send": "إرسال",
+    "forgetpasswordfailurestate": "هذا البريد الالكتروني غير موجود",
+    "forgetpasswordsuccessstate": "إفحص بريدك الالكتروني"
 }
