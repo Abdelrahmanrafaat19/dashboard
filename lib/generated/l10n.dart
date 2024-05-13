@@ -219,6 +219,16 @@ class S {
       args: [],
     );
   }
+
+  /// `The E-mail or Password is Error`
+  String get loginfailurestate {
+    return Intl.message(
+      'The E-mail or Password is Error',
+      name: 'loginfailurestate',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

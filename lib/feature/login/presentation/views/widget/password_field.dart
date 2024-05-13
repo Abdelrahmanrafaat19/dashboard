@@ -1,6 +1,8 @@
 import 'package:dashboard/core/componant/custam_buttons.dart';
 import 'package:dashboard/core/componant/custam_form_field.dart';
 import 'package:dashboard/core/componant/custam_text.dart';
+import 'package:dashboard/core/method.dart';
+import 'package:dashboard/core/scal_factor_method.dart';
 import 'package:dashboard/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -9,7 +11,8 @@ import '../../../../../core/theme/color.dart';
 
 // ignore: must_be_immutable
 class PasswordField extends StatefulWidget {
-  const PasswordField({super.key});
+  final TextEditingController controller;
+  const PasswordField({super.key, required this.controller});
 
   @override
   State<PasswordField> createState() => _PasswordFieldState();
@@ -20,8 +23,6 @@ class _PasswordFieldState extends State<PasswordField> {
 
   @override
   Widget build(BuildContext context) {
-    var width = MediaQuery.of(context).size.width;
-    var heigh = MediaQuery.of(context).size.height;
     return defaultTextFormField(
         validator: (value) {
           if (value!.isEmpty) {
@@ -30,26 +31,28 @@ class _PasswordFieldState extends State<PasswordField> {
 
           return null;
         },
-        // controller: widget.passwordController,
+        controller: widget.controller,
         obscure: passobsure,
         border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20.r),
-            borderSide: BorderSide(
-                color: SharedColor.greyFieldColor,
-                width: width < heigh ? 3.w : 3.h)),
+          borderRadius: BorderRadius.circular(20.r),
+          borderSide: BorderSide(
+            color: SharedColor.greyFieldColor,
+            width: responsiveWeidth(context, 2),
+          ),
+        ),
         label: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             Icon(
               Icons.password,
               color: SharedColor.greyFieldColor,
-              size: width < heigh ? 25.w : 25.h,
+              size: getResponsiveFont(context, fontSize: 25),
             ),
             customText(
                 fontWeight: FontWeight.w600,
                 text: S.of(context).password,
                 color: SharedColor.greyFieldColor,
-                fontSize: width < heigh ? 15.w : 15.h)
+                fontSize: getResponsiveFont(context, fontSize: 15))
           ],
         ),
         hint: S.of(context).passwordhint,
@@ -73,7 +76,7 @@ class _PasswordFieldState extends State<PasswordField> {
                 text: customText(
                   text: S.of(context).forgetpassword,
                   color: SharedColor.blueColor,
-                  fontSize: width < heigh ? 12.w : 12.h,
+                  fontSize: getResponsiveFont(context, fontSize: 12),
                   fontWeight: FontWeight.w500,
                 ),
                 onPressed: () {})

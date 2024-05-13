@@ -15,5 +15,6 @@
     "emailfielderror": "Please Enter Your E-mail",
     "signUpQ": "Are you have acount?",
     "signupsuccessatate": "The Registration is Completed",
-    "signupfailurestate": "This Data Already Existing"
+    "signupfailurestate": "This Data Already Existing",
+    "loginfailurestate": "The E-mail or Password is Error"
 }

@@ -30,6 +30,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetpassword":
             MessageLookupByLibrary.simpleMessage("نسية كلمة المرور"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "loginfailurestate": MessageLookupByLibrary.simpleMessage(
+            "البريد الإلكتروي او كلمة المرور غير صحيح"),
         "loginhint": MessageLookupByLibrary.simpleMessage(
             "رجاء ادخل البريد لالكتروني و كلمة المرور"),
         "logininQ": MessageLookupByLibrary.simpleMessage("هل لديك حساب؟"),

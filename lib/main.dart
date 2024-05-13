@@ -1,8 +1,11 @@
 import 'package:dashboard/core/locator.dart';
 import 'package:dashboard/feature/layout/localization/localiztion_state.dart';
 import 'package:dashboard/feature/layout/localization/loclization_cubit.dart';
+import 'package:dashboard/feature/login/data/login_repo/login_repo_imple.dart';
 import 'package:dashboard/feature/login/data/signup/sign_up_repo_imple.dart';
+import 'package:dashboard/feature/login/presentation/bloc/login_bloc/login_cubit.dart';
 import 'package:dashboard/feature/login/presentation/bloc/sign_up_bloc/sign_up_cubit.dart';
+import 'package:dashboard/feature/login/presentation/views/login.dart';
 import 'package:dashboard/feature/login/presentation/views/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -35,6 +38,9 @@ class MyApp extends StatelessWidget {
             BlocProvider(
               create: (context) => SignUpCubit(getit.get<SignUpRepoImple>()),
             ),
+            BlocProvider(
+              create: (context) => LoginCubit(getit.get<LoginRepoImple>()),
+            ),
           ],
           child: BlocBuilder<LocaleCubit, ChangeLocaleState>(
             builder: (context, state) {
@@ -54,7 +60,7 @@ class MyApp extends StatelessWidget {
           ),
         );
       },
-      child: const SignUpScreen(),
+      child: const LoginScreen(),
     );
   }
 }

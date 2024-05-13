@@ -29,6 +29,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgetpassword":
             MessageLookupByLibrary.simpleMessage("Forget Password"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "loginfailurestate": MessageLookupByLibrary.simpleMessage(
+            "The E-mail or Password is Error"),
         "loginhint": MessageLookupByLibrary.simpleMessage(
             "Please Enter Your E-mail and Password"),
         "logininQ":

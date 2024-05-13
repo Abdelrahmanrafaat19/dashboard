@@ -15,5 +15,6 @@
     "emailfielderror": "رجاء ادخل البريد الالكتروني",
     "signUpQ": "هل لديك حساب؟",
     "signupsuccessatate": "التسجيل قد اكتمل",
-    "signupfailurestate": "هذة البيانات موجودة من قبل"
+    "signupfailurestate": "هذة البيانات موجودة من قبل",
+    "loginfailurestate": "البريد الإلكتروي او كلمة المرور غير صحيح"
 }
