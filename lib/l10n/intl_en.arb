@@ -1,0 +1,17 @@
+{
+    "login": "Login",
+    "loginhint": "Please Enter Your E-mail and Password",
+    "username": "UserName",
+    "email": "E-mail",
+    "password": "Password",
+    "forgetpassword": "Forget Password",
+    "logininQ": "Don`t have an account?",
+    "signup": "SignUp",
+    "usernamehint": "Enter Your E-mail or Username",
+    "passwordhint": "Enter Your Password",
+    "usernamefielderror": "Please Enter Your E-mail or Password",
+    "passwordfielderror": "Please Enter Your Password",
+    "emailhint": "Enter Your E-mail",
+    "emailfielderror": "Please Enter Your E-mail",
+    "signUpQ": "Are you have acount?"
+}
