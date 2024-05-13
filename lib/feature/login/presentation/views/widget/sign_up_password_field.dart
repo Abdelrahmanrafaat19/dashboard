@@ -7,7 +7,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../generated/l10n.dart';
 
 class SignUpPasswordField extends StatefulWidget {
-  const SignUpPasswordField({super.key});
+  final TextEditingController controller;
+  const SignUpPasswordField({super.key, required this.controller});
 
   @override
   State<SignUpPasswordField> createState() => _SignUpPasswordFieldState();
@@ -28,7 +29,7 @@ class _SignUpPasswordFieldState extends State<SignUpPasswordField> {
 
           return null;
         },
-        // controller: widget.passwordController,
+        controller: widget.controller,
         obscure: passobsure,
         border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20.r),

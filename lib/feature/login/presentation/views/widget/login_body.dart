@@ -10,7 +10,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoginBody extends StatelessWidget {
-  const LoginBody({super.key});
+  LoginBody({super.key});
+  final TextEditingController userNameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +61,9 @@ class LoginBody extends StatelessWidget {
                   SizedBox(
                     height: 15.h,
                   ),
-                  const UserNameField(),
+                  UserNameField(
+                    controller: userNameController,
+                  ),
                   SizedBox(
                     height: 20.h,
                   ),

@@ -38,6 +38,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_screenutil: ^5.9.0
+  get_it: ^7.7.0
   http: ^1.2.1
   intl: ^0.18.1
   locator: ^0.0.0-dev.2

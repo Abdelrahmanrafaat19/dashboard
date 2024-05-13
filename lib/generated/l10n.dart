@@ -199,6 +199,26 @@ class S {
       args: [],
     );
   }
+
+  /// `The Registration is Completed`
+  String get signupsuccessatate {
+    return Intl.message(
+      'The Registration is Completed',
+      name: 'signupsuccessatate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Data Already Existing`
+  String get signupfailurestate {
+    return Intl.message(
+      'This Data Already Existing',
+      name: 'signupfailurestate',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

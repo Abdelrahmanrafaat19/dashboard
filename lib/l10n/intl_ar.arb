@@ -13,5 +13,7 @@
     "passwordfielderror": "رجاء ادخل كلمة المرور",
     "emailhint": "أدخل البريد الالكتروني",
     "emailfielderror": "رجاء ادخل البريد الالكتروني",
-    "signUpQ": "هل لديك حساب؟"
+    "signUpQ": "هل لديك حساب؟",
+    "signupsuccessatate": "التسجيل قد اكتمل",
+    "signupfailurestate": "هذة البيانات موجودة من قبل"
 }

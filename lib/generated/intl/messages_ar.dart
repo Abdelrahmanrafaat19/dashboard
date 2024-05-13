@@ -40,6 +40,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("ادخل كلمة المرور"),
         "signUpQ": MessageLookupByLibrary.simpleMessage("هل لديك حساب؟"),
         "signup": MessageLookupByLibrary.simpleMessage("إشترك"),
+        "signupfailurestate":
+            MessageLookupByLibrary.simpleMessage("هذة البيانات موجودة من قبل"),
+        "signupsuccessatate":
+            MessageLookupByLibrary.simpleMessage("التسجيل قد اكتمل"),
         "username": MessageLookupByLibrary.simpleMessage("إسم المستخدم"),
         "usernamefielderror": MessageLookupByLibrary.simpleMessage(
             "رجاء ادخل اسم المستخدم او البريد الالكتروني"),

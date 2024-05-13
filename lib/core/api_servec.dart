@@ -1,5 +1,6 @@
 import 'package:dashboard/constant.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/widgets.dart';
 
 class ApiServer {
   Dio dio;
@@ -8,15 +9,15 @@ class ApiServer {
       {required String endPoint,
       required Map<String, dynamic> data,
       String? token,
-      Map<String, String>? headers}) async {
+      required Map<String, String>? headers}) async {
     var response = await dio.post(
       "$baseURL/$endPoint",
       data: data,
       options: Options(
-        headers: {"Content-type": "application/json"},
+        headers: headers,
       ),
     );
-
+    debugPrint("response of Post Method of $endPoint is ${response.data}");
     return response.data;
   }
 

@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class UserNameField extends StatelessWidget {
-  const UserNameField({super.key});
+  final TextEditingController controller;
+  const UserNameField({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class UserNameField extends StatelessWidget {
 
           return null;
         },
-        // controller: phoneNumberController,
+        controller: controller,
         border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20.r),
             borderSide: BorderSide(
