@@ -259,6 +259,76 @@ class S {
       args: [],
     );
   }
+
+  /// `Reset Password`
+  String get resetpassword {
+    return Intl.message(
+      'Reset Password',
+      name: 'resetpassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Congfirm Password`
+  String get confirmpasswoed {
+    return Intl.message(
+      'Congfirm Password',
+      name: 'confirmpasswoed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Code`
+  String get code {
+    return Intl.message(
+      'Code',
+      name: 'code',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Code Sent`
+  String get codehint {
+    return Intl.message(
+      'Enter Code Sent',
+      name: 'codehint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Must Be Enter Code Sent`
+  String get codeerrorfield {
+    return Intl.message(
+      'Must Be Enter Code Sent',
+      name: 'codeerrorfield',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This Code is Not Correct`
+  String get resetpasswordfailurestate {
+    return Intl.message(
+      'This Code is Not Correct',
+      name: 'resetpasswordfailurestate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The password and Confirm Password Must Be Same`
+  String get resetpasswordcheck {
+    return Intl.message(
+      'The password and Confirm Password Must Be Same',
+      name: 'resetpasswordcheck',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

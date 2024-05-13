@@ -22,6 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "code": MessageLookupByLibrary.simpleMessage("الكود"),
+        "codeerrorfield":
+            MessageLookupByLibrary.simpleMessage("يجب ادخال الكود"),
+        "codehint": MessageLookupByLibrary.simpleMessage("أدخل الكود المرسل"),
+        "confirmpasswoed":
+            MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "emailfielderror":
             MessageLookupByLibrary.simpleMessage("رجاء ادخل البريد الالكتروني"),
@@ -44,6 +50,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("رجاء ادخل كلمة المرور"),
         "passwordhint":
             MessageLookupByLibrary.simpleMessage("ادخل كلمة المرور"),
+        "resetpassword":
+            MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
+        "resetpasswordcheck": MessageLookupByLibrary.simpleMessage(
+            "يجب انت تكون كلمة المرور نفس تاكيد كلمة المرور"),
+        "resetpasswordfailurestate":
+            MessageLookupByLibrary.simpleMessage("هذا الكود غير صحيح"),
         "send": MessageLookupByLibrary.simpleMessage("إرسال"),
         "signUpQ": MessageLookupByLibrary.simpleMessage("هل لديك حساب؟"),
         "signup": MessageLookupByLibrary.simpleMessage("إشترك"),

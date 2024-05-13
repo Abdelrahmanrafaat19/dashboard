@@ -19,5 +19,12 @@
     "loginfailurestate": "The E-mail or Password is Error",
     "send": "Send",
     "forgetpasswordfailurestate": "This E-mail isn`t Exisit",
-    "forgetpasswordsuccessstate": "Check Your E-mail"
+    "forgetpasswordsuccessstate": "Check Your E-mail",
+    "resetpassword": "Reset Password",
+    "confirmpasswoed": "Congfirm Password",
+    "code": "Code",
+    "codehint": "Enter Code Sent",
+    "codeerrorfield": "Must Be Enter Code Sent",
+    "resetpasswordfailurestate": "This Code is Not Correct",
+    "resetpasswordcheck": "The password and Confirm Password Must Be Same"
 }

@@ -1,7 +1,8 @@
 import 'package:dashboard/core/locator.dart';
 import 'package:dashboard/feature/auth/data/forget_password_repo/forget_password_repo_imple.dart';
+import 'package:dashboard/feature/auth/data/reset_password_repo/reset_password_repo_imple.dart';
 import 'package:dashboard/feature/auth/presentation/bloc/forget_password_cubit/forget_password_cubit.dart';
-import 'package:dashboard/feature/auth/presentation/views/forget_password.dart';
+import 'package:dashboard/feature/auth/presentation/bloc/reset_password_bloc/reset_password_cubit.dart';
 import 'package:dashboard/feature/auth/presentation/views/login.dart';
 import 'package:dashboard/feature/layout/localization/localiztion_state.dart';
 import 'package:dashboard/feature/layout/localization/loclization_cubit.dart';
@@ -13,7 +14,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'generated/l10n.dart';
 
 void main() {
@@ -46,6 +46,11 @@ class MyApp extends StatelessWidget {
             BlocProvider(
               create: (context) => ForgetPasswordCubit(
                 getit.get<ForgetPasswordRepoImple>(),
+              ),
+            ),
+            BlocProvider(
+              create: (context) => ResetPasswordCubit(
+                getit.get<ResetPasswordRepoImple>(),
               ),
             ),
           ],

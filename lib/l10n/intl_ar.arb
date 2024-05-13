@@ -20,5 +20,12 @@
     "forgetpassword": "نسيت كلمة المرور",
     "send": "إرسال",
     "forgetpasswordfailurestate": "هذا البريد الالكتروني غير موجود",
-    "forgetpasswordsuccessstate": "إفحص بريدك الالكتروني"
+    "forgetpasswordsuccessstate": "إفحص بريدك الالكتروني",
+    "resetpassword": "إعادة تعيين كلمة المرور",
+    "confirmpasswoed": "تأكيد كلمة المرور",
+    "code": "الكود",
+    "codehint": "أدخل الكود المرسل",
+    "codeerrorfield": "يجب ادخال الكود",
+    "resetpasswordfailurestate": "هذا الكود غير صحيح",
+    "resetpasswordcheck": "يجب انت تكون كلمة المرور نفس تاكيد كلمة المرور"
 }

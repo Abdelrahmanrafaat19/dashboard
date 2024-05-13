@@ -4,19 +4,20 @@ import 'package:dashboard/core/method.dart';
 import 'package:dashboard/core/scal_factor_method.dart';
 import 'package:dashboard/core/theme/color.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../generated/l10n.dart';
 
-class SignUpPasswordField extends StatefulWidget {
+class ConfirmPasswordField extends StatefulWidget {
   final TextEditingController controller;
-  const SignUpPasswordField({super.key, required this.controller});
+  const ConfirmPasswordField({super.key, required this.controller});
 
   @override
-  State<SignUpPasswordField> createState() => _SignUpPasswordFieldState();
+  State<ConfirmPasswordField> createState() => _ConfirmPasswordFieldState();
 }
 
-class _SignUpPasswordFieldState extends State<SignUpPasswordField> {
+class _ConfirmPasswordFieldState extends State<ConfirmPasswordField> {
   bool passobsure = true;
 
   @override
@@ -24,7 +25,7 @@ class _SignUpPasswordFieldState extends State<SignUpPasswordField> {
     return defaultTextFormField(
         validator: (value) {
           if (value!.isEmpty) {
-            return S.of(context).passwordfielderror;
+            return S.of(context).confirmpasswoed;
           }
 
           return null;
@@ -48,13 +49,16 @@ class _SignUpPasswordFieldState extends State<SignUpPasswordField> {
             ),
             customText(
               fontWeight: FontWeight.w600,
-              text: S.of(context).password,
+              text: S.of(context).confirmpasswoed,
               color: SharedColor.greyFieldColor,
-              fontSize: getResponsiveFont(context, fontSize: 15),
+              fontSize: getResponsiveFont(
+                context,
+                fontSize: 15,
+              ),
             )
           ],
         ),
-        hint: S.of(context).passwordhint,
+        hint: S.of(context).confirmpasswoed,
         suffixIcon: Row(
           mainAxisSize: MainAxisSize.min,
           children: [

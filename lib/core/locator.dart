@@ -1,6 +1,7 @@
 import 'package:dashboard/core/api_servec.dart';
 import 'package:dashboard/feature/auth/data/forget_password_repo/forget_password_repo_imple.dart';
 import 'package:dashboard/feature/auth/data/login_repo/login_repo_imple.dart';
+import 'package:dashboard/feature/auth/data/reset_password_repo/reset_password_repo_imple.dart';
 import 'package:dashboard/feature/auth/data/signup/sign_up_repo_imple.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
@@ -23,6 +24,11 @@ void setUp() {
   );
   getit.registerSingleton<ForgetPasswordRepoImple>(
     ForgetPasswordRepoImple(
+      getit.get<ApiServer>(),
+    ),
+  );
+  getit.registerSingleton<ResetPasswordRepoImple>(
+    ResetPasswordRepoImple(
       getit.get<ApiServer>(),
     ),
   );
