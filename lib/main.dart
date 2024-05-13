@@ -2,6 +2,7 @@ import 'package:dashboard/core/locator.dart';
 import 'package:dashboard/feature/auth/data/forget_password_repo/forget_password_repo_imple.dart';
 import 'package:dashboard/feature/auth/presentation/bloc/forget_password_cubit/forget_password_cubit.dart';
 import 'package:dashboard/feature/auth/presentation/views/forget_password.dart';
+import 'package:dashboard/feature/auth/presentation/views/login.dart';
 import 'package:dashboard/feature/layout/localization/localiztion_state.dart';
 import 'package:dashboard/feature/layout/localization/loclization_cubit.dart';
 import 'package:dashboard/feature/auth/data/login_repo/login_repo_imple.dart';
@@ -66,7 +67,7 @@ class MyApp extends StatelessWidget {
           ),
         );
       },
-      child: const ForgetPassword(),
+      child: const LoginScreen(),
     );
   }
 }

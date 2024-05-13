@@ -3,6 +3,7 @@ import 'package:dashboard/core/componant/custam_form_field.dart';
 import 'package:dashboard/core/componant/custam_text.dart';
 import 'package:dashboard/core/method.dart';
 import 'package:dashboard/core/scal_factor_method.dart';
+import 'package:dashboard/feature/auth/presentation/views/forget_password.dart';
 import 'package:dashboard/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -79,7 +80,15 @@ class _PasswordFieldState extends State<PasswordField> {
                   fontSize: getResponsiveFont(context, fontSize: 12),
                   fontWeight: FontWeight.w500,
                 ),
-                onPressed: () {})
+                onPressed: () {
+                  Navigator.of(context).push(
+                    PageRouteBuilder(
+                      pageBuilder: (context, animation, secondaryAnimation) {
+                        return const ForgetPassword();
+                      },
+                    ),
+                  );
+                })
           ],
         ),
         style: const TextStyle());
