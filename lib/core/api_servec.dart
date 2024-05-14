@@ -17,8 +17,7 @@ class ApiServer {
         headers: headers,
       ),
     );
-    debugPrint(
-        "response of Post Method of $endPoint is ${response.statusCode}");
+    debugPrint("response of Post Method of $endPoint is ${response.data}");
     return response.data;
   }
 

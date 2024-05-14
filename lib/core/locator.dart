@@ -3,6 +3,7 @@ import 'package:dashboard/feature/auth/data/forget_password_repo/forget_password
 import 'package:dashboard/feature/auth/data/login_repo/login_repo_imple.dart';
 import 'package:dashboard/feature/auth/data/reset_password_repo/reset_password_repo_imple.dart';
 import 'package:dashboard/feature/auth/data/signup/sign_up_repo_imple.dart';
+import 'package:dashboard/feature/book_appointment/data/make_book_appointment_repo_imple.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
@@ -29,6 +30,11 @@ void setUp() {
   );
   getit.registerSingleton<ResetPasswordRepoImple>(
     ResetPasswordRepoImple(
+      getit.get<ApiServer>(),
+    ),
+  );
+  getit.registerSingleton<MakeBookAppointmentRepoImple>(
+    MakeBookAppointmentRepoImple(
       getit.get<ApiServer>(),
     ),
   );

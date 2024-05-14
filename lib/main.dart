@@ -3,6 +3,8 @@ import 'package:dashboard/feature/auth/data/forget_password_repo/forget_password
 import 'package:dashboard/feature/auth/data/reset_password_repo/reset_password_repo_imple.dart';
 import 'package:dashboard/feature/auth/presentation/bloc/forget_password_cubit/forget_password_cubit.dart';
 import 'package:dashboard/feature/auth/presentation/bloc/reset_password_bloc/reset_password_cubit.dart';
+import 'package:dashboard/feature/book_appointment/data/make_book_appointment_repo_imple.dart';
+import 'package:dashboard/feature/book_appointment/presentation/bloc/make_book_appointment_bloc/make_book_appointment_cubit.dart';
 import 'package:dashboard/feature/book_appointment/presentation/view/make_book_appointment.dart';
 import 'package:dashboard/feature/layout/localization/localiztion_state.dart';
 import 'package:dashboard/feature/layout/localization/loclization_cubit.dart';
@@ -51,6 +53,11 @@ class MyApp extends StatelessWidget {
             BlocProvider(
               create: (context) => ResetPasswordCubit(
                 getit.get<ResetPasswordRepoImple>(),
+              ),
+            ),
+            BlocProvider(
+              create: (context) => MakeBookAppointmentCubit(
+                getit.get<MakeBookAppointmentRepoImple>(),
               ),
             ),
           ],
