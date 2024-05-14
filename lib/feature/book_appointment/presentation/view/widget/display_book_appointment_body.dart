@@ -19,34 +19,6 @@ class DiaplayBookAppointMentBody extends StatefulWidget {
 
 class _DiaplayBookAppointMentBodyState
     extends State<DiaplayBookAppointMentBody> {
-  final List<Map> data = [
-    {
-      "name": "Shaoib",
-      "phone": "01063103655",
-      "email": "Shaoib@gmail.com",
-      "age": "22",
-      "Perfered_Contact": "Phone",
-      "Services": "any thing",
-      "Service_Type": "any Thing of Services",
-      "message": "",
-      "createdAt": "2024-05-14T07:43:45.601Z",
-      "updatedAt": "2024-05-14T07:43:45.601Z",
-      "publishedAt": "2024-05-14T07:43:45.600Z"
-    },
-    {
-      "name": "ddd",
-      "phone": "ddd",
-      "email": "dd",
-      "age": "dd",
-      "Perfered_Contact": "Phone",
-      "Services": "any thing",
-      "Service_Type": "any Thing of Services",
-      "message": "ddd",
-      "createdAt": "2024-05-14T07:49:43.694Z",
-      "updatedAt": "2024-05-14T07:49:43.694Z",
-      "publishedAt": "2024-05-14T07:49:43.693Z"
-    },
-  ];
   bool currrent = false;
   int currentIndex = 0;
   @override
@@ -243,9 +215,7 @@ class _DiaplayBookAppointMentBodyState
                     TableViewCell(
                       child: InkWell(
                         onTap: () {
-                          setState(() {
-                            data.removeAt(index);
-                          });
+                          setState(() {});
                         },
                         child: CircleAvatar(
                           radius: 10.r,
