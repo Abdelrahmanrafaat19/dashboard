@@ -329,6 +329,186 @@ class S {
       args: [],
     );
   }
+
+  /// `Book-Appintment`
+  String get bookappointment {
+    return Intl.message(
+      'Book-Appintment',
+      name: 'bookappointment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone`
+  String get phone {
+    return Intl.message(
+      'Phone',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Phone`
+  String get phonehint {
+    return Intl.message(
+      'Enter Your Phone',
+      name: 'phonehint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Must Be Enter Your Phone`
+  String get phoneerrorfield {
+    return Intl.message(
+      'Must Be Enter Your Phone',
+      name: 'phoneerrorfield',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Age`
+  String get age {
+    return Intl.message(
+      'Age',
+      name: 'age',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Age`
+  String get agehint {
+    return Intl.message(
+      'Enter Your Age',
+      name: 'agehint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Must Be Enter Your Age`
+  String get ageerrorfield {
+    return Intl.message(
+      'Must Be Enter Your Age',
+      name: 'ageerrorfield',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Perfered Contact`
+  String get PerferedContact {
+    return Intl.message(
+      'Perfered Contact',
+      name: 'PerferedContact',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose`
+  String get choose {
+    return Intl.message(
+      'Choose',
+      name: 'choose',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Must Be Choose Your PerferedContact`
+  String get PerferedContacterrorfield {
+    return Intl.message(
+      'Must Be Choose Your PerferedContact',
+      name: 'PerferedContacterrorfield',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Service`
+  String get service {
+    return Intl.message(
+      'Service',
+      name: 'service',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Must Be Choose Your Service`
+  String get serviceerrorfield {
+    return Intl.message(
+      'Must Be Choose Your Service',
+      name: 'serviceerrorfield',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Service Type`
+  String get servicetype {
+    return Intl.message(
+      'Service Type',
+      name: 'servicetype',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Must Be Choose Your Service Type`
+  String get servicetypeerror {
+    return Intl.message(
+      'Must Be Choose Your Service Type',
+      name: 'servicetypeerror',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Message`
+  String get message {
+    return Intl.message(
+      'Message',
+      name: 'message',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Message`
+  String get messagehint {
+    return Intl.message(
+      'Enter Your Message',
+      name: 'messagehint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Username`
+  String get name {
+    return Intl.message(
+      'Enter Your Username',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Must Be Enter You Username`
+  String get nameerrorfield {
+    return Intl.message(
+      'Must Be Enter You Username',
+      name: 'nameerrorfield',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

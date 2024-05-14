@@ -22,6 +22,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "PerferedContact":
+            MessageLookupByLibrary.simpleMessage("Perfered Contact"),
+        "PerferedContacterrorfield": MessageLookupByLibrary.simpleMessage(
+            "Must Be Choose Your PerferedContact"),
+        "age": MessageLookupByLibrary.simpleMessage("Age"),
+        "ageerrorfield":
+            MessageLookupByLibrary.simpleMessage("Must Be Enter Your Age"),
+        "agehint": MessageLookupByLibrary.simpleMessage("Enter Your Age"),
+        "bookappointment":
+            MessageLookupByLibrary.simpleMessage("Book-Appintment"),
+        "choose": MessageLookupByLibrary.simpleMessage("Choose"),
         "code": MessageLookupByLibrary.simpleMessage("Code"),
         "codeerrorfield":
             MessageLookupByLibrary.simpleMessage("Must Be Enter Code Sent"),
@@ -45,17 +56,33 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please Enter Your E-mail and Password"),
         "logininQ":
             MessageLookupByLibrary.simpleMessage("Don`t have an account?"),
+        "message": MessageLookupByLibrary.simpleMessage("Message"),
+        "messagehint":
+            MessageLookupByLibrary.simpleMessage("Enter Your Message"),
+        "name": MessageLookupByLibrary.simpleMessage("Enter Your Username"),
+        "nameerrorfield":
+            MessageLookupByLibrary.simpleMessage("Must Be Enter You Username"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "passwordfielderror":
             MessageLookupByLibrary.simpleMessage("Please Enter Your Password"),
         "passwordhint":
             MessageLookupByLibrary.simpleMessage("Enter Your Password"),
+        "phone": MessageLookupByLibrary.simpleMessage("Phone"),
+        "phoneerrorfield":
+            MessageLookupByLibrary.simpleMessage("Must Be Enter Your Phone"),
+        "phonehint": MessageLookupByLibrary.simpleMessage("Enter Your Phone"),
         "resetpassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
         "resetpasswordcheck": MessageLookupByLibrary.simpleMessage(
             "The password and Confirm Password Must Be Same"),
         "resetpasswordfailurestate":
             MessageLookupByLibrary.simpleMessage("This Code is Not Correct"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
+        "service": MessageLookupByLibrary.simpleMessage("Service"),
+        "serviceerrorfield":
+            MessageLookupByLibrary.simpleMessage("Must Be Choose Your Service"),
+        "servicetype": MessageLookupByLibrary.simpleMessage("Service Type"),
+        "servicetypeerror": MessageLookupByLibrary.simpleMessage(
+            "Must Be Choose Your Service Type"),
         "signUpQ": MessageLookupByLibrary.simpleMessage("Are you have acount?"),
         "signup": MessageLookupByLibrary.simpleMessage("SignUp"),
         "signupfailurestate":

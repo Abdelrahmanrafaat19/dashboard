@@ -22,6 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "PerferedContact": MessageLookupByLibrary.simpleMessage("طريق التواصل"),
+        "PerferedContacterrorfield":
+            MessageLookupByLibrary.simpleMessage("يجب اختيار طريقة التواصل"),
+        "age": MessageLookupByLibrary.simpleMessage("العمر"),
+        "ageerrorfield":
+            MessageLookupByLibrary.simpleMessage("يجب إدخال العمر"),
+        "agehint": MessageLookupByLibrary.simpleMessage("أدخل العمر"),
+        "bookappointment": MessageLookupByLibrary.simpleMessage("حجز المواعيد"),
+        "choose": MessageLookupByLibrary.simpleMessage("إختر"),
         "code": MessageLookupByLibrary.simpleMessage("الكود"),
         "codeerrorfield":
             MessageLookupByLibrary.simpleMessage("يجب ادخال الكود"),
@@ -45,11 +54,21 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginhint": MessageLookupByLibrary.simpleMessage(
             "رجاء ادخل البريد لالكتروني و كلمة المرور"),
         "logininQ": MessageLookupByLibrary.simpleMessage("هل لديك حساب؟"),
+        "message": MessageLookupByLibrary.simpleMessage("الرسالة"),
+        "messagehint":
+            MessageLookupByLibrary.simpleMessage("ادخل الريالة الخاصبك"),
+        "name": MessageLookupByLibrary.simpleMessage("أدخل اسم المستخدم"),
+        "nameerrorfield":
+            MessageLookupByLibrary.simpleMessage("يجب ادخال اسم المستخدم"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "passwordfielderror":
             MessageLookupByLibrary.simpleMessage("رجاء ادخل كلمة المرور"),
         "passwordhint":
             MessageLookupByLibrary.simpleMessage("ادخل كلمة المرور"),
+        "phone": MessageLookupByLibrary.simpleMessage("الهاتف"),
+        "phoneerrorfield":
+            MessageLookupByLibrary.simpleMessage("يجب ادخال الهاتف"),
+        "phonehint": MessageLookupByLibrary.simpleMessage("أدخل رقم الهاتف"),
         "resetpassword":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
         "resetpasswordcheck": MessageLookupByLibrary.simpleMessage(
@@ -57,6 +76,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "resetpasswordfailurestate":
             MessageLookupByLibrary.simpleMessage("هذا الكود غير صحيح"),
         "send": MessageLookupByLibrary.simpleMessage("إرسال"),
+        "service": MessageLookupByLibrary.simpleMessage("الخدمة"),
+        "serviceerrorfield":
+            MessageLookupByLibrary.simpleMessage("يجب إختيار الخدمة"),
+        "servicetype": MessageLookupByLibrary.simpleMessage("نوع الخدمة"),
+        "servicetypeerror":
+            MessageLookupByLibrary.simpleMessage("يجب اختيار نوع الخدمة"),
         "signUpQ": MessageLookupByLibrary.simpleMessage("هل لديك حساب؟"),
         "signup": MessageLookupByLibrary.simpleMessage("إشترك"),
         "signupfailurestate":

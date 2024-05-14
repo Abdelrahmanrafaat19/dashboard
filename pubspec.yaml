@@ -43,6 +43,7 @@ dependencies:
   intl: ^0.18.1
   locator: ^0.0.0-dev.2
   shared_preferences: ^2.2.3
+  dropdown_textfield: ^1.0.8
 
 dev_dependencies:
   flutter_lints: ^3.0.0
