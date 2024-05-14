@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "codehint": MessageLookupByLibrary.simpleMessage("Enter Code Sent"),
         "confirmpasswoed":
             MessageLookupByLibrary.simpleMessage("Congfirm Password"),
+        "delete": MessageLookupByLibrary.simpleMessage("Delete"),
         "email": MessageLookupByLibrary.simpleMessage("E-mail"),
         "emailfielderror":
             MessageLookupByLibrary.simpleMessage("Please Enter Your E-mail"),

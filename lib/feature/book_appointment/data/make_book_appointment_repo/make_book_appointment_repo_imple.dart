@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:dashboard/core/api_servec.dart';
 import 'package:dashboard/core/error/failure.dart';
-import 'package:dashboard/feature/book_appointment/data/make_book_appointment_repo.dart';
+import 'package:dashboard/feature/book_appointment/data/make_book_appointment_repo/make_book_appointment_repo.dart';
 import 'package:dio/dio.dart';
 
 class MakeBookAppointmentRepoImple implements MakeBookAppointmentRepo {

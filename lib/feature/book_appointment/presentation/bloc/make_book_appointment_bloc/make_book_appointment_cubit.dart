@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:dashboard/feature/book_appointment/data/make_book_appointment_repo_imple.dart';
+import 'package:dashboard/feature/book_appointment/data/make_book_appointment_repo/make_book_appointment_repo_imple.dart';
 import 'package:meta/meta.dart';
 
 part 'make_book_appointment_state.dart';

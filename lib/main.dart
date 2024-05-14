@@ -3,9 +3,11 @@ import 'package:dashboard/feature/auth/data/forget_password_repo/forget_password
 import 'package:dashboard/feature/auth/data/reset_password_repo/reset_password_repo_imple.dart';
 import 'package:dashboard/feature/auth/presentation/bloc/forget_password_cubit/forget_password_cubit.dart';
 import 'package:dashboard/feature/auth/presentation/bloc/reset_password_bloc/reset_password_cubit.dart';
-import 'package:dashboard/feature/book_appointment/data/make_book_appointment_repo_imple.dart';
+import 'package:dashboard/feature/book_appointment/data/diaplay_book_appointment_repo/diaplay_book_appointment_repo_imple.dart';
+import 'package:dashboard/feature/book_appointment/data/make_book_appointment_repo/make_book_appointment_repo_imple.dart';
+import 'package:dashboard/feature/book_appointment/presentation/bloc/display_book_appointment_bloc/display_book_appointment_cubit.dart';
 import 'package:dashboard/feature/book_appointment/presentation/bloc/make_book_appointment_bloc/make_book_appointment_cubit.dart';
-import 'package:dashboard/feature/book_appointment/presentation/view/make_book_appointment.dart';
+import 'package:dashboard/feature/book_appointment/presentation/view/diaplay_book_appointment.dart';
 import 'package:dashboard/feature/layout/localization/localiztion_state.dart';
 import 'package:dashboard/feature/layout/localization/loclization_cubit.dart';
 import 'package:dashboard/feature/auth/data/login_repo/login_repo_imple.dart';
@@ -60,6 +62,11 @@ class MyApp extends StatelessWidget {
                 getit.get<MakeBookAppointmentRepoImple>(),
               ),
             ),
+            BlocProvider(
+              create: (context) => DisplayBookAppointmentCubit(
+                getit.get<DisplayBookAppointmentRepoImple>(),
+              )..displayBookAppointment(),
+            ),
           ],
           child: BlocBuilder<LocaleCubit, ChangeLocaleState>(
             builder: (context, state) {
@@ -79,7 +86,7 @@ class MyApp extends StatelessWidget {
           ),
         );
       },
-      child: const MakeBookAppointment(),
+      child: const DiaplayBookAppointment(),
     );
   }
 }

@@ -44,5 +44,6 @@
     "message": "Message",
     "messagehint": "Enter Your Message",
     "name": "Enter Your Username",
-    "nameerrorfield": "Must Be Enter You Username"
+    "nameerrorfield": "Must Be Enter You Username",
+    "delete": "Delete"
 }

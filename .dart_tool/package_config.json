@@ -248,6 +248,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "scrollable_table_view",
+      "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/hosted/pub.dev/scrollable_table_view-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "shared_preferences",
       "rootUri": "file:///C:/Users/Admin/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences-2.2.3",
       "packageUri": "lib/",
@@ -374,7 +380,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-14T05:55:45.130321Z",
+  "generated": "2024-05-14T08:39:24.171994Z",
   "generator": "pub",
   "generatorVersion": "3.3.4"
 }

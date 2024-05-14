@@ -21,18 +21,21 @@ class ApiServer {
     return response.data;
   }
 
-  Future<Map<String, dynamic>> getMethod(
-      {required String endPoint,
-      Map<String, dynamic>? data,
-      String? token,
-      String? local}) async {
+  Future<Map<String, dynamic>> getMethod({
+    required String endPoint,
+    Map<String, dynamic>? data,
+    String? token,
+    String? local,
+    required Map<String, String>? headers,
+  }) async {
     var response = await dio.get(
       "$baseURL/$endPoint",
       data: data,
-      options:
-          Options(headers: {'Authorization': 'Bearer $token', "locale": local}),
+      options: Options(
+        headers: headers,
+      ),
     );
-
+    debugPrint("response of get Method of $endPoint is ${response.data}");
     return response.data;
   }
 }
