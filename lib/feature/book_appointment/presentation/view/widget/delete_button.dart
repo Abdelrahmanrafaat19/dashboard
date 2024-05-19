@@ -23,16 +23,14 @@ class _DeleteButtonState extends State<DeleteButton> {
   Widget build(BuildContext context) {
     return BlocConsumer<DeleteBookAppointmentCubit, DeleteBookAppointmentState>(
       listener: (context, state) {
-        if (state is DeleteBookAppointmentSuccess) {
-          Fluttertoast.showToast(
-              msg: "The Deleted is Success",
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.CENTER,
-              timeInSecForIosWeb: 1,
-              backgroundColor: Colors.red,
-              textColor: Colors.white,
-              fontSize: getResponsiveFont(context, fontSize: 15));
-        }
+        Fluttertoast.showToast(
+            msg: "The Deleted is Success",
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.CENTER,
+            timeInSecForIosWeb: 1,
+            backgroundColor: Colors.red,
+            textColor: Colors.white,
+            fontSize: getResponsiveFont(context, fontSize: 15));
       },
       builder: (context, state) {
         return GestureDetector(
