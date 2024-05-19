@@ -38,4 +38,24 @@ class ApiServer {
     debugPrint("response of get Method of $endPoint is ${response.data}");
     return response.data;
   }
+
+  Future<Map<String, dynamic>> deleteMethod({
+    required String endPoint,
+    Map<String, dynamic>? data,
+    String? token,
+    String? local,
+    required Map<String, String>? headers,
+  }) async {
+    var response = await dio.delete(
+      "$baseURL/$endPoint",
+      data: data,
+      options: Options(
+        headers: headers,
+      ),
+    );
+    debugPrint(
+        "response of Delete Method of $endPoint is ${response.statusCode}");
+    debugPrint("response of Delete Method of $endPoint is ${response.data}");
+    return response.data;
+  }
 }

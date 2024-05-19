@@ -1,8 +1,7 @@
 import 'package:dashboard/core/method.dart';
-import 'package:dashboard/core/scal_factor_method.dart';
-import 'package:dashboard/core/theme/color.dart';
 import 'package:dashboard/feature/book_appointment/data/diaplay_book_appointment_repo/diaplay_book_appointment_repo_imple.dart';
 import 'package:dashboard/feature/book_appointment/presentation/bloc/display_book_appointment_bloc/display_book_appointment_cubit.dart';
+import 'package:dashboard/feature/book_appointment/presentation/view/widget/delete_button.dart';
 import 'package:dashboard/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,7 +9,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:scrollable_table_view/scrollable_table_view.dart';
 
 class DiaplayBookAppointMentBody extends StatefulWidget {
-  DiaplayBookAppointMentBody({super.key});
+  const DiaplayBookAppointMentBody({super.key});
 
   @override
   State<DiaplayBookAppointMentBody> createState() =>
@@ -213,19 +212,8 @@ class _DiaplayBookAppointMentBodyState
                           ""),
                     ),
                     TableViewCell(
-                      child: InkWell(
-                        onTap: () {
-                          setState(() {});
-                        },
-                        child: CircleAvatar(
-                          radius: 10.r,
-                          backgroundColor: Colors.red,
-                          child: Icon(
-                            Icons.delete,
-                            color: SharedColor.whiteColor,
-                            size: getResponsiveFont(context, fontSize: 15),
-                          ),
-                        ),
+                      child: DeleteButton(
+                        index: index,
                       ),
                     ),
                   ],

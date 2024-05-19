@@ -3,8 +3,10 @@ import 'package:dashboard/feature/auth/data/forget_password_repo/forget_password
 import 'package:dashboard/feature/auth/data/reset_password_repo/reset_password_repo_imple.dart';
 import 'package:dashboard/feature/auth/presentation/bloc/forget_password_cubit/forget_password_cubit.dart';
 import 'package:dashboard/feature/auth/presentation/bloc/reset_password_bloc/reset_password_cubit.dart';
+import 'package:dashboard/feature/book_appointment/data/delete_book_appointment/delete_book_appointment_repo/delete_book_appointment_repo_imple.dart';
 import 'package:dashboard/feature/book_appointment/data/diaplay_book_appointment_repo/diaplay_book_appointment_repo_imple.dart';
 import 'package:dashboard/feature/book_appointment/data/make_book_appointment_repo/make_book_appointment_repo_imple.dart';
+import 'package:dashboard/feature/book_appointment/presentation/bloc/delete_book_appointment_bloc/delete_book_appointment_cubit.dart';
 import 'package:dashboard/feature/book_appointment/presentation/bloc/display_book_appointment_bloc/display_book_appointment_cubit.dart';
 import 'package:dashboard/feature/book_appointment/presentation/bloc/make_book_appointment_bloc/make_book_appointment_cubit.dart';
 import 'package:dashboard/feature/book_appointment/presentation/view/diaplay_book_appointment.dart';
@@ -66,6 +68,11 @@ class MyApp extends StatelessWidget {
               create: (context) => DisplayBookAppointmentCubit(
                 getit.get<DisplayBookAppointmentRepoImple>(),
               )..displayBookAppointment(),
+            ),
+            BlocProvider(
+              create: (context) => DeleteBookAppointmentCubit(
+                getit.get<DeleteBookAppointmentRepoImple>(),
+              ),
             ),
           ],
           child: BlocBuilder<LocaleCubit, ChangeLocaleState>(
