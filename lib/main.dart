@@ -92,7 +92,7 @@ class MyApp extends StatelessWidget {
           ),
         );
       },
-      child: const DiaplayBookAppointment(),
+      child: const DisplayBookAppointment(),
     );
   }
 }

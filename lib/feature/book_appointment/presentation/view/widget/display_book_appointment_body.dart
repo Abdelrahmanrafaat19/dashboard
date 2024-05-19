@@ -8,16 +8,16 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:scrollable_table_view/scrollable_table_view.dart';
 
-class DiaplayBookAppointMentBody extends StatefulWidget {
-  const DiaplayBookAppointMentBody({super.key});
+class DisplayBookAppointMentBody extends StatefulWidget {
+  const DisplayBookAppointMentBody({super.key});
 
   @override
-  State<DiaplayBookAppointMentBody> createState() =>
-      _DiaplayBookAppointMentBodyState();
+  State<DisplayBookAppointMentBody> createState() =>
+      _DisplayBookAppointMentBodyState();
 }
 
-class _DiaplayBookAppointMentBodyState
-    extends State<DiaplayBookAppointMentBody> {
+class _DisplayBookAppointMentBodyState
+    extends State<DisplayBookAppointMentBody> {
   bool currrent = false;
   int currentIndex = 0;
   @override

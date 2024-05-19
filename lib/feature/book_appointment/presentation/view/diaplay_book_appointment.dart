@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'widget/display_book_appointment_body.dart';
 
-class DiaplayBookAppointment extends StatelessWidget {
-  const DiaplayBookAppointment({super.key});
+class DisplayBookAppointment extends StatelessWidget {
+  const DisplayBookAppointment({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class DiaplayBookAppointment extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
-      body: DiaplayBookAppointMentBody(),
+      body: const DisplayBookAppointMentBody(),
     );
   }
 }
